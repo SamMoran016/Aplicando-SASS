@@ -1,0 +1,121 @@
+@import "index";
+  
+  p {
+    font-size: 18px;
+  }
+  
+  
+  
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: rgb(200, 159, 163);
+    }
+  
+    .contenedor {
+      width: 100%;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas: "header" "contenido" "sidebar" "footer";
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+  
+    .contenedor > div,
+  .contenedor .header,
+  .contenedor .contenido,
+  .contenedor .footer {
+      background-color: rgb(195, 176, 172);
+    }
+  
+    .contenedor .header {
+      grid-area: header;
+      background-color: rgb(200, 159, 163);
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-between;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    li {
+      padding: 15px;
+    }
+  
+    .contenedor .contenido {
+      grid-area: contenido;
+    }
+  
+    .contenedor .footer {
+      grid-area: footer;
+      background-color: rgb(108, 83, 78);
+      justify-self: center;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px) and (max-width: 320px) {
+    .body {
+      background-color: brown;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      width: 100%;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-areas: "header" "contenido" "sidebar" "footer";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .contenedor .footer {
+      grid-area: footer;
+      background-color: rgb(108, 83, 78);
+      justify-self: center;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .contenido > h1 {
+      color: rgb(30, 2, 56);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .contenido > p {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .body {
+      background-image: linear-gradient(to bottom, rgb(196, 107, 174), rgb(235, 123, 192));
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .contenidocarrusel {
+      width: 100%;
+    }
+  }/*# sourceMappingURL=estiloSas.css.map */

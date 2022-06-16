@@ -1,0 +1,61 @@
+$texto: 16px;
+$color:black;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body { 
+    background-image: linear-gradient(to bottom, rgb(192, 135, 170), rgb(235, 177, 213));
+    color: black;
+
+    header {
+        font-weight: 400;
+        font-size: 35px;
+
+        .contenidocaruusel {
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+
+            &:hover {
+                color: rgb(0, 0, 0);
+
+                nav {
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                ul li {
+                    padding: 15px;
+                }
+
+            }
+
+            .contenedor  {
+                grid-area: contenido;
+
+                .contenido p{
+                    font-size: $texto;
+                    .footer {
+                        grid-area: footer;
+                        background-color: $colorBack;
+                        justify-self: center;
+                        text-align: center;
+                    }
+                }
+
+            }
+        } 
+    }
+}
